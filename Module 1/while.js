@@ -90,7 +90,6 @@ const multiply2 = (n) => console.log(n*2)
 function randomGen() {
 
 	do {
-	
 		b = Math.floor(Math.random() * 100);
 		console.log(b)
 	} while (b <= 80)
