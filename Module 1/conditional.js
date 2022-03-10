@@ -115,12 +115,12 @@ function calculateRoot(a, b, c, s) {
 
 	Tabela de Países e suas respectivas idades legais para consumo de bebida alcoólicas:
 
-	    Brasil: 18 anos
-	    EUA: 21 anos
-	    Paraguai: 20 anos
-	    Jamaica: 16 anos
-	    Irã: nunca
-	    Armênia: sem limite de idade
+		Brasil: 18 anos
+		EUA: 21 anos
+		Paraguai: 20 anos
+		Jamaica: 16 anos
+		Irã: nunca
+		Armênia: sem limite de idade
 
 	Obs: Considere as strings enviadas por parâmetro na função da seguinte forma: 
 	"brasil", "eua", "paraguai", "jamaica", "ira", "armenia"
