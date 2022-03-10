@@ -13,7 +13,6 @@ function checkLetter(c) {
     if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u ') {
         return 'Vowel'
     }
-
 	return 'Consonant'
 }
 
@@ -229,7 +228,7 @@ function isLegal(age, country, drink) {
 		}
 		else {
 			if (age >= 21) { return true }           
-			else { return false} 
+			else { return false} 	
 		}
 	}
 	if (country == 'portugal') {
@@ -258,6 +257,3 @@ function isLegal(age, country, drink) {
 		if (country == 'armenia') { return true 
 	}
 }
-
-
-console.log(isLegal(24, 'brasil', 'vinho'))
