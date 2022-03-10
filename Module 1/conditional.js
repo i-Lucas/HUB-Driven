@@ -95,16 +95,15 @@ function calculateRoot(a, b, c, s) {
 
 	Table of Countries and their respective legal ages for consumption of alcoholic beverages:
 
-	Brazil: 18 years
-	USA: 21 years
-	Paraguay: 20 years
-	Jamaica: 16 years
-	Iran: never
-	Armenia: no age limit
+		Brazil: 18 years
+		USA: 21 years
+		Paraguay: 20 years
+		Jamaica: 16 years
+		Iran: never
+		Armenia: no age limit
 
 	Note: Consider the strings sent by parameter in the function as follows:
 	"brazil", "usa", "paraguay", "jamaica", "ira", "armenia"
-
 
 
 	Imagine que você trabalhe para uma ONG que estuda o consumo de alcool entre adolescentes, 
