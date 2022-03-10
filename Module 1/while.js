@@ -68,3 +68,30 @@ function repeatCommands(x) {
 
 const sum1 = (n) => console.log(n+1);
 const multiply2 = (n) => console.log(n*2)
+
+
+/*
+	In this exercise you will use a do-while structure to create the randomGen() function.
+	This function should print random numbers between 0 and 100 on the screen and only
+	must stop after the first number greater than or equal to 80 is generated.
+
+	To generate a random number, use the command Math.floor(Math.random() * 100)
+
+
+	Nesse exercício você vai usar uma estrutura do tipo do-while para criar a função randomGen(). 
+	Essa função deverá imprimir na tela números aleatórios entre 0 e 100 e só 
+	deve parar após ser gerado o primeiro número maior ou igual a 80.
+
+	Para gerar um número aleatório, utilize o comando Math.floor(Math.random() * 100)
+*/
+
+
+// solution
+function randomGen() {
+
+	do {
+	
+		b = Math.floor(Math.random() * 100);
+		console.log(b)
+	} while (b <= 80)
+}
