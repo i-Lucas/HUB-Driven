@@ -34,7 +34,7 @@ function multipleOfSix2(lst) {
 
 /*
 	Create a function called string3(lst), which takes a list of strings and returns the first 3-letter string found.
-	If there are no strings of length 3, return an empty string.
+	If there are no strings of length 3, return an empty string
 
 	Ex: lst = ["rice", "land", "sky", "water"] => Should return "sky"
 	lst = ["car", "engineering"] => Should return ""
