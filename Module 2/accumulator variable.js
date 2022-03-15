@@ -403,6 +403,8 @@ function deltaPN(lst) {
     }
 }
 
+
+// alternative solution
 function deltaPN(lst) {
 
     let p = 0, n = 0
