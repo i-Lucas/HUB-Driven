@@ -4,7 +4,7 @@
 
     Faça a função somaPares(lista), que recebe uma lista e soma todos os números que forem pares dessa lista, retornando a soma em seguida.
     Ex: lista = [5,6,2,7,9,10] => Deve retornar 18
-    */
+*/
 
 
 // solution
@@ -42,7 +42,7 @@ function sumPeers(l) {
 
     Faça a função somaInteiros(lista), que recebe uma lista e soma os números inteiros que forem encontrados nessa lista.
     Ex: lista = ["abc", [ ], ["Não"], 2, 4, 2.5, "carro", 2.5, 1] => Deve retornar 7
-    */
+*/
 
 
 // solution
@@ -94,7 +94,7 @@ function sumIntegers(list) {
     Ex:
         lst = ["15", "5", "10"] => Deve retornar 30
         lst = ["5.5", "6.5", "12"] => Deve retornar 24
-        */
+*/
 
 
 // solution
@@ -132,7 +132,7 @@ function convertAndSum(lst) {
 
     Escreva uma função chamada produto(lst), que recebe uma lista de valores numéricos e deve retornar o produto dos elementos da lista.
     Ex: lst = [3, 3, 2] => Deve retornar 18     
-    */
+*/
 
 
 // solution
@@ -177,7 +177,7 @@ function product(lst) {
     Ex:
         lst = [3, 1, 2, 4, 5] => Deve retornar 8
         lst = [1, 1, 1, 3] => Deve retornar -1
-        */
+*/
 
 
 // solution
@@ -222,7 +222,7 @@ function productEvenNumbers(lst) {
     Crie uma função chamada acumulaString(lst), que recebe uma lista de strings e acumula essas strings em uma única string
     separando um elemento do outro por um espaço.
         Ex: lst = ["Abelha", "azul", "zumbindo", "no mar"] => Deve retornar "Abelha azul zumbindo no mar";
-        */
+*/
 
 
 // solution
@@ -266,7 +266,7 @@ function accumulateString(lst) {
         lst = ["u", "r", "u", "b", "u"] => Deve retornar "uuu"
         lst = ["a", "z", "e", "i", "t", "o", "u"] => Deve retornar "aeiou"
         lst = ["v", "l", "w"] => Deve retornar ""
-        */
+*/
 
 
 // solution
@@ -317,7 +317,7 @@ function accumulateVowels(lst) {
     Ex:
         lst = ['A', 'm', 'mar', 'carro', 'o', 'dor', 'r'] => Deve retornar 'Amor'
         lst = ['avião', 'sonho', 'SOM', 'azul'] => Deve retornar ''
-        */
+*/
 
 
 // solution
@@ -352,7 +352,6 @@ function justLetters(lst) {
 }
 
 
-
 /*
     Create a function called deltaPN(lst), which takes a list of numbers and should accumulate in a variable
     all positive numbers in this list and in another variable the negative numbers.
@@ -376,34 +375,33 @@ function justLetters(lst) {
     Exemplo:
         lst = [-2, 5, -2] => Deve retornar 1
         lst = [2, -5, 2] => Deve retornar -1
-        */
+*/
 
 
 // solution
-// function deltaPN(lst) {
+function deltaPN(lst) {
 
-//     let p = 0
-//     let n = 0
+    let p = 0, n = 0
 
-//     for (let i = 0; i < lst.length; i++) {
-//         let e = lst[i]
+    for (let i = 0; i < lst.length; i++) {
+        let e = lst[i]
 
-//         if (e > 0) {
-//             p += e
-//         } else {
-//             n += e
-//         }
-//     }
+        if (e > 0) {
+            p += e
+        } else {
+            n += e
+        }
+    }
 
-//     p = Math.abs(p)
-//     n = Math.abs(n)
+    p = Math.abs(p)
+    n = Math.abs(n)
 
-//     if (p > n) {
-//         return p - n
-//     } else {
-//         return - (n - p)
-//     }
-// }
+    if (p > n) {
+        return p - n
+    } else {
+        return - (n - p)
+    }
+}
 
 function deltaPN(lst) {
 
@@ -411,8 +409,8 @@ function deltaPN(lst) {
 
     lst.forEach(number => {
         if(number > 0) { p += number } 
-        else { n += number }  
-    })
+            else { n += number }  
+        })
 
     p = Math.abs(p), n = Math.abs(n)
 
