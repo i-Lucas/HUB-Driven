@@ -7,10 +7,10 @@
 	Crie uma função chamada maiorNumero(lista), que recebe uma array e retorna o maior número dessa array. 
 	Caso a array esteja vazia, retorne null.
 	Exemplo: lista = [10, 20, -30, -100, 50, 20] => deve retornar 50
-	*/
+*/
 
 
-// // solution
+// // solution 1
 function largestNumber(list) {
 
 	if (list.length === 0) return null
@@ -25,7 +25,7 @@ function largestNumber(list) {
 }
 
 
-// alternative solution
+// solution 2
 function largestNumber(list) {
 
 	if (list.length === 0) return null
@@ -44,10 +44,10 @@ function largestNumber(list) {
 	Create a function called smallestNumber(lst), which takes an array and returns the smallest number from that array.
 
 	Crie uma função chamada menorNumero(lst), que recebe uma array e retorna o menor número dessa array.
-	*/
+*/
 
 
-// solution
+// solution 1
 function smallestNumber(lst) {
 
 	if (lst.length === 0) return null
@@ -62,7 +62,7 @@ function smallestNumber(lst) {
 }
 
 
-// alternative solution
+// solution 2
 function smallestNumber(lst) {
 
 	if (lst.length === 0) return null
@@ -93,10 +93,10 @@ function smallestNumber(lst) {
 	    lst = [7, 3, 9, 10] => Deve retornar 9
 	    lst = [3, 10, -1] => Deve retornar -1
 	    lst = [2, 4, 6, 8] => Deve retornar null
-	    */
+*/
 
 
-// solution
+// solution 1
 function lastOdd(lst) {
 
 	let candidate = 0, empty = true
@@ -114,7 +114,7 @@ function lastOdd(lst) {
 }
 
 
-// alternative solution
+// solution 2
 function lastOdd(lst) {
 
 	let candidate = 0, empty = true
@@ -150,10 +150,10 @@ function lastOdd(lst) {
 	    lst = ['peixe', 34.1, 'fogo', 'pular', 7] => Deve retornar 'pular'
 	    lst = [5, 'água', 'mar', ['teste']] => Deve retornar 'água'
 	    lst = [1, 2, 3] => Deve retornar null
-	    */
+*/
 
 
-// solution
+// solution 1
 function largestString(lst) {
 
 	let a = [], candidate = 0, big = null
@@ -179,7 +179,7 @@ function largestString(lst) {
 }
 
 
-// alternative solution
+// solution 2
 function largestString(lst) {
 
 	let a = [], candidate = 0, big = null
@@ -223,7 +223,7 @@ function largestString(lst) {
 */
 
 
-// solution
+// solution 1
 function posLastEmpty(lst) {
 
     let a = -1
@@ -238,7 +238,7 @@ function posLastEmpty(lst) {
 }
 
 
-// alternative solution
+// solution 2
 function posLastEmpty(lst) {
 
     let candidate = -1
@@ -270,7 +270,7 @@ function posLastEmpty(lst) {
 */
 
 
-// solution
+// solution 1
 function smallestDecimal(lst) {
 
     let e, a = []
@@ -299,7 +299,7 @@ function smallestDecimal(lst) {
 }
 
 
-// alternative solution
+// solution 2
 function smallestDecimal(lst) {
 
     let a = [], candidate
