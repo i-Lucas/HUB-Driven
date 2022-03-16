@@ -7,7 +7,7 @@
 */
 
 
-// solution
+// solution 1
 function sumPeers(l) {
 
     let x = 0
@@ -22,7 +22,7 @@ function sumPeers(l) {
 }
 
 
-// alternative solution
+// solution 2
 function sumPeers(l) {
 
     let r = 0
@@ -45,7 +45,7 @@ function sumPeers(l) {
 */
 
 
-// solution
+// solution 1
 function sumIntegers(list) {
 
     let r = 0
@@ -64,7 +64,7 @@ function sumIntegers(list) {
 }
 
 
-// alternative solution
+// solution 2
 function sumIntegers(list) {
 
     let r = 0
@@ -97,7 +97,7 @@ function sumIntegers(list) {
 */
 
 
-// solution
+// solution 1
 function convertAndSum(lst) {
 
     let x = 0
@@ -112,7 +112,7 @@ function convertAndSum(lst) {
 }
 
 
-// alternative solution
+// solution 2
 function convertAndSum(lst) {
 
     let r = 0
@@ -135,7 +135,7 @@ function convertAndSum(lst) {
 */
 
 
-// solution
+// solution 1
 function product(lst) {
 
     let x = 1
@@ -149,7 +149,7 @@ function product(lst) {
 }
 
 
-// alternative solution
+// solution 2
 function product(lst) {
 
     let r = 1
@@ -180,7 +180,7 @@ function product(lst) {
 */
 
 
-// solution
+// solution 1
 function productEvenNumbers(lst) {
 
     let x = 1, p = false
@@ -197,7 +197,7 @@ function productEvenNumbers(lst) {
 }
 
 
-// alternative solution
+// solution 2
 function productEvenNumbers(lst) {
 
     let r = 1, x = false
@@ -225,7 +225,7 @@ function productEvenNumbers(lst) {
 */
 
 
-// solution
+// solution 1
 function accumulateString(lst) {
 
     let a = []
@@ -238,7 +238,7 @@ function accumulateString(lst) {
 }
 
 
-// alternative solution
+// solution 2
 function accumulateString(lst) {
 
     let a = []
@@ -269,7 +269,7 @@ function accumulateString(lst) {
 */
 
 
-// solution
+// solution 1
 function accumulateVowels(lst) {
 
     let v = ['a', 'e', 'i', 'o', 'u']
@@ -289,6 +289,7 @@ function accumulateVowels(lst) {
 }
 
 
+// solution 2
 function accumulateVowels(lst) {
 
     let v = ['a', 'e', 'i', 'o', 'u'], a = []
@@ -320,7 +321,7 @@ function accumulateVowels(lst) {
 */
 
 
-// solution
+// solution 1
 function justLetters(lst) {
 
     let b = ''
@@ -337,7 +338,7 @@ function justLetters(lst) {
 }
 
 
-// alternative solution
+// solution 2
 function justLetters(lst) {
 
     let a = []
@@ -378,7 +379,7 @@ function justLetters(lst) {
 */
 
 
-// solution
+// solution 1
 function deltaPN(lst) {
 
     let p = 0, n = 0
@@ -404,7 +405,7 @@ function deltaPN(lst) {
 }
 
 
-// alternative solution
+// solution 2
 function deltaPN(lst) {
 
     let p = 0, n = 0
