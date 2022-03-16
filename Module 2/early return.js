@@ -12,7 +12,7 @@
 */
 
 
-// solution
+// solution 1
 function multipleOfSix(lst) {
     for (let i = 0; i < lst.length; i++) {
 
@@ -23,7 +23,8 @@ function multipleOfSix(lst) {
     return -1
 }
 
-// alternative solution
+
+// solution 2
 function multipleOfSix2(lst) {
 
 	let r = lst.find(element => element % 6 === 0)
@@ -48,7 +49,7 @@ function multipleOfSix2(lst) {
 */
 
 
-// solution
+// solution 1
 function string3(lst) {
 
     for (let i = 0; i < lst.length; i++) {
@@ -59,7 +60,8 @@ function string3(lst) {
     return ''
 }
 
-// alternative solution
+
+// solution 2
 function string3s2(lst) {
 
 	let r = lst.find(element => element.length === 3)
@@ -84,7 +86,7 @@ function string3s2(lst) {
 */
 
 
-// solution
+// solution 1
 function negativePar(lst) {
 
     for (let i = 0; i < lst.length; i++) {
@@ -97,7 +99,8 @@ function negativePar(lst) {
     return false
 }
 
-// alternative solution
+
+// solution 2
 function negativePar2(lst) {
 
 	let r = lst.find(element => element % 2 === 0 && element < 0)
@@ -122,7 +125,7 @@ function negativePar2(lst) {
 */
 
 
-// solution
+// solution 1
 function firstString(lst) {
 
     for (let i = 0; i < lst.length; i++) {
@@ -134,7 +137,8 @@ function firstString(lst) {
     return false
 }
 
-// alternative solution
+
+// solution 2
 function firstString2(lst) {
 
 	let r = lst.find(element =>  typeof(element) === 'string')
@@ -157,7 +161,7 @@ function firstString2(lst) {
 */
 
 
-// solution
+// solution 1
 function firstDecimal(lst) {
 
     for (let i = 0; i < lst.length; i++) {
@@ -173,7 +177,8 @@ function firstDecimal(lst) {
     return -1
 }
 
-// alternative solution
+
+// solution 2
 function firstDecimal2(lst) {
 
 	let r = lst.find(element => element % 1 !== 0)
@@ -200,7 +205,7 @@ function firstDecimal2(lst) {
 */
 
 
-// solution
+// solution 1
 function multipleOf(x, lst) {
 
     for (let i = 0; i < lst.length; i++) {
@@ -213,7 +218,8 @@ function multipleOf(x, lst) {
     return -1
 }
 
-// alternative solution
+
+// solution 2
 function multipleOf2(x, lst) {
 
 	let r = lst.find(element => element % x === 0)
@@ -238,7 +244,7 @@ function multipleOf2(x, lst) {
 */
 
 
-// solution
+// solution 1
 function doubleIndexValue(lst) {
 
     for (let i = 0; i < lst.length; i++) {
@@ -256,7 +262,8 @@ function doubleIndexValue(lst) {
     return false
 }
 
-// alternative solution
+
+// solution 2
 function doubleIndexValue2(lst) {
 
 	e = undefined
@@ -292,7 +299,7 @@ function doubleIndexValue2(lst) {
 */
 
 
-// solution
+// solution 1
 function squareIndex(lst) {
 
     for (let i = 0; i < lst.length; i++) {
@@ -307,7 +314,8 @@ function squareIndex(lst) {
     return -1
 }
 
-// alternative solution
+
+// solution 2
 function squareIndex2(lst) {
 
     e = undefined, x = false
@@ -338,7 +346,7 @@ function squareIndex2(lst) {
 */
 
 
-// solution
+// solution 1
 function lastNegative(lst) {
 
     let g = []
@@ -360,7 +368,7 @@ function lastNegative(lst) {
 }
 
 
-// alternative solution
+// solution 2
 function lastNegative2(lst) {
 
     let g = []
