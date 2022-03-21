@@ -222,6 +222,7 @@ function displace(list) {
 	if(size === 0) return []
 
 	for(let i = 0; i < end; i++) { 
+
 		endlist.push(list[i])
 	}
 
@@ -246,6 +247,7 @@ function displace2(list) {
 function displace3(list) {
 
 	for(let i of list) {
+
 		list.unshift(list.pop())
 	}
 
@@ -271,6 +273,7 @@ function displace3(list) {
 function removeOdd(list) {
     return list.filter(number => number % 2 !== 0)
 }
+
 
 
 // solution 2
