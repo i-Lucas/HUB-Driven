@@ -161,7 +161,6 @@ function indexNum(str) {
 
 	}
 	return array
-
 }
 
 
@@ -178,3 +177,92 @@ function indexNum(str) {
 	}
 	return final;
 }
+
+
+/*
+	Create a function called addCedilha(str, x), which takes a string and adds a "ç" at the x position of the string,
+	pushing the letters to the right. If there is no x position, add the letter to the end of the string.
+	Ex:
+		x = 3, str = 'machete' => Must return 'faction
+		x = 19, str = 'Scrub' => Should return 'Scrub'
+		x = 13, str = '' => Must return 'ç' 
+
+	Crie uma função chamada adicionaCedilha(str, x), que recebe uma string e adiciona um "ç" na posição x da string, 
+	empurrando as letras para direita. Caso não exista posição x, adicione a letra no final da string.
+	Ex:
+	    x = 3, str = 'facão' => Deve retornar 'facção
+	    x = 19, str = 'Matagal' => Deve retornar 'Matagalç'
+	    x = 13, str = '' => Deve retornar 'ç'
+*/
+
+
+// solution 
+function addCedilha(str, x){
+
+    if(x === undefined) return str + 'ç'        
+    return str.substr(0, x) + 'ç' + str.substr(x)
+}
+
+
+// solution 2
+const addCedilha2 = (str, x) => x === undefined ? str + 'ç' : str.substr(0, x) + 'ç' + str.substr(x)
+
+
+/*
+	Create a function called removeL(str) that takes a string and returns a new string without the letters 'l'.
+	Ex:
+		str = 'lion' => Should return 'eão'
+		str = 'lulu' => Should return 'uu'
+		str = 'la la land' => Should return 'a a and'
+		str = ' ' => Must return ' '
+
+	Crie uma função chamada removeL(str) que recebe uma string e retorna uma nova string sem as letras 'l'.
+	Ex:
+	    str = 'leão' => Deve retornar 'eão'
+	    str = 'lulu' => Deve retornar 'uu'
+	    str = 'la la land' => Deve retornar 'a a and'
+	    str = ' ' => Deve retornar ' '
+*/
+
+
+// solution 1
+// function removeL(str) {
+//     return str.replace(/l/g, '');
+// }
+
+
+// solution 2
+function removeL(str){
+    let newStr = '';
+    for(let i in str) {
+        if(str[i] !== 'l'){
+            newStr += str[i];
+        }
+    }
+    return newStr;
+}
+
+
+/*
+	Creates a function called insertParenthesis(str) that takes a string and returns the string inside parentheses.
+	Ex:
+		str = "plate" => Should return "(plate)"
+		str = "note above" => Should return "(note above)"
+		str = "" => Should return "()"
+
+	Cria uma função chamada insereParenteses(str) que recebe uma string e retorna a string dentro de parênteses.
+	Ex:
+	    str = "placa" => Deve retornar "(placa)"
+	    str = "observe acima" => Deve retornar "(observe acima)"
+	    str = "" => Deve retornar "()"
+*/	
+
+
+// solution 1
+function insertParenthesis(str) {
+    return `(${str})`
+}
+
+
+// solution 2
+const insertParenthesis = (str) => `(${str})`
