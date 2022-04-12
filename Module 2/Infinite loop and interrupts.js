@@ -81,6 +81,7 @@ function validPassword(hub){
      return 1
 }
 
+
 /*
     Create a function called stopEmZero(lst) that takes a list of integers and while traversing the list adds the elements.
      The loop must be stopped if the function finds an element with value 0 in the list.
@@ -156,4 +157,53 @@ function discard(x, y, lst) {
 // solution 2
 function discard(x, y, lst) {
     return lst.filter((item, index) => index !== x && index !== y);
+}
+
+
+/* 
+    Create a function called stopInDouble(lst), which takes a list and iterates through that list while
+     sum the elements until reaching the end, or until finding an element that has a value that is the
+     twice the index that this element occupies. Return the cumulative sum including the stop value.
+     Ex:
+         lst = [0, 5, 6, 7] => Should return 0
+         lst = [ ] => Should return 0
+         lst = [1, 2, 3, 5] => Should return 3
+         lst = [9, 0, 1, 3, 7,10, 9, 8] => Should return 30
+         lst = [8, 3, 3, 6, 31, 100, 67] = Should return 20
+
+    Crie uma função chamada paraNoDobro(lst), que recebe uma lista e itera por essa lista enquanto
+    soma os elementos até chegar ao final, ou até encontrar um elemento que possuí um valor que é o
+    dobro do índice que esse elemento ocupa. Retorne a soma acumulada incluindo o valor de parada.
+    Ex:
+        lst = [0, 5, 6, 7] => Deve retornar 0
+        lst = [ ] => Deve retornar 0
+        lst = [1, 2, 3, 5] => Deve retornar 3
+        lst = [9, 0, 1, 3, 7,10, 9, 8] => Deve retornar 30
+        lst = [8, 3, 3, 6, 31, 100, 67] = Deve retornar 20
+
+*/
+
+
+// solution 1
+function stopInDouble(lst) {
+
+    let soma = 0
+    for (let i = 0; i < lst.length; i++) {
+        soma += lst[i]
+        if(lst[i] === i*2) return soma
+    } n
+    return soma
+}
+
+
+// solution 2
+function paraNoDobro(lst) {
+
+    let soma = 0
+    for (let i in lst) {
+        
+        soma += lst[i]
+        if(lst[i] === i*2) return soma
+    }
+    return soma
 }
