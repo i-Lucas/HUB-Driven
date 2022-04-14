@@ -8,10 +8,6 @@
 
 	Crie uma função chamada removedorDePalavras(str), que irá receber uma string. Essa função deve remover as 
 	palavras com 3 caracteres ou menos e retornar uma nova string contendo apenas as palavras não removidas.
-	Ex:
-	    str1 = "Lorem Ipsum is simply dummy text of the printing" => "Lorem Ipsum simply dummy text printing"
-	    str2 = "Era uma casa muito engraçada" => "casa muito engraçada"
-	    str3 = "" => ""
 */
 
 
@@ -35,10 +31,6 @@ const wordsRemover2 = (str) => str.split(' ').filter(x => x.length > 3).join(' '
 
 	Crie a função juntaArray(lst), que recebe uma lista de strings e deve retornar 
 	uma nova string com os elementos da lista recebida separados por um espaço entre eles.
-	Ex:
-	    lst = ['a', 'b', 'c'] => Deve retornar "a b c"
-	    lst = ['Marco', 'Polo'] => Deve retornar "Marco Polo"
-	    lst = [ ] => Deve retornar ""
 */
 
 
@@ -64,9 +56,6 @@ const joinArray2 = (lst) => lst.join(" ")
 
 	Crie uma função criaLista(str), que recebe uma string, e separa essa string em elementos 
 	usando o caractere de espaço como divisor de elementos. Por fim retorne essa lista.
-	Ex:
-	    str = "Para quem ta se afogando jacaré é tronco" => Deve retornar ['Para', 'quem', 'ta', 'se', 'afogando', 'jacaré', 'é', 'tronco']
-	    str = "Filho de peixe, peixinho é" => Deve retornar ['Filho', 'de', 'peixe,', 'peixinho', 'é']
 */
 
 
@@ -97,11 +86,6 @@ const createList = (str) => str.length !== 0 ? str.split(' ') : ''
 	remove o elemento que nesta posição. Por fim retorne a string com o elemento removido.
 	Caso o valor de x esteja além do tamanho dessa string, não devem ser feitas alterações na 
 	string e ela deve ser retornada sem sofrer alterações.
-	Ex:
-	    x = 0, str= 'abc' => Deve retornar 'bc'
-	    x = 4, lstr= 'avião' => Deve retornar 'aviã'
-	    x = 4, str = 'moto'=> Deve retornar 'moto'
-	    x = 1, str = ' ' => Deve retornar ' '
 */
 
 
@@ -133,10 +117,6 @@ const removeAt3 = (x, str) => x > str.length ? str : str.substr(0, x) + str.subs
 
 	Crie uma função chamada insereVirgula(str), que recebe uma string e adiciona uma vírgula 
 	depois de cada palavra dessa string, menos na última.
-	Ex:
-	    str = 'Pedra Papel Tesoura' => Deve retornar 'Pedra, Papel, Tesoura'
-	    str = 'casa carro moto' => Deve retornar 'casa, carro, moto'
-	    str = ' ' => Deve retornar ' '
 */
 
 
@@ -162,11 +142,6 @@ const insertComma = (str) => str.length === 0 ? '' : str.split(' ').join(', ')
 
 	Crie uma função chamada verificaPalavra(str, keyword), que recebe uma string e uma palavra chave. 
 	Essa função deve retornar true caso essa palavra seja encontrada dentro da string, e false em caso contrário.
-	Ex:
-	    str = 'Leitura sobre árvore desbalanceada', keyword = 'árvore' => Deve retornar true
-	    str = 'Vivendo a primavera e o verão', keyword = 'primavera' => Deve retornar true
-	    str = 'Vivendo a primavera e o verão', keyword = 'inverno' => Deve retornar false
-	    str = ' ', keyword = 'casa' => Deve retornar false
 */
 
 
@@ -180,22 +155,18 @@ function verificaPalavra(str, keyword) {
 const verificaPalavra2 = (str, keyword) => str.indexOf(keyword) > -1
 
 
-	/*
-		Create a function called removeMajor(str), which takes a string of words separated by commas and removes the largest
-		word of that string. If there is more than one longer word, all of the longest words must be dropped.
-		This function returns the list without the longest words.
-		Ex:
-			str = 'house, motorcycle, car' => Should return 'house, motorcycle'
-			str = 'saw, motorcycle, car, house' => Should return 'motorcycle, house'
-			str = 'rock, paper, car. saw' => Should return ' '
+/*
+	Create a function called removeMajor(str), which takes a string of words separated by commas and removes the largest
+	word of that string. If there is more than one longer word, all of the longest words must be dropped.
+	This function returns the list without the longest words.
+	Ex:
+		str = 'house, motorcycle, car' => Should return 'house, motorcycle'
+		str = 'saw, motorcycle, car, house' => Should return 'motorcycle, house'
+		str = 'rock, paper, car. saw' => Should return ' '
 
-		Crie a função chamada removeMaior(str), que recebe uma string de palavras separadas por vírgulas e remove a maior 
-		palavra dessa string. Se existirem mais de uma maior palavra, todas com o maior comprimento deverão ser retiradas. 
-		Essa função retorna a lista sem as maiores palavras.
-		Ex:
-		    str = 'casa, moto, carro' => Deve retornar 'casa, moto'
-		    str = 'serra, moto, carro, casa' => Deve retornar 'moto, casa'
-		    str = 'pedra, papel, carro. serra' => Deve retornar ' '
+	Crie a função chamada removeMaior(str), que recebe uma string de palavras separadas por vírgulas e remove a maior 
+	palavra dessa string. Se existirem mais de uma maior palavra, todas com o maior comprimento deverão ser retiradas. 
+	Essa função retorna a lista sem as maiores palavras.
 */
 
 
@@ -237,10 +208,6 @@ function removeMajor(str){
 	Crie uma função chamada comparaNumPalavras(str1, str2), que recebe duas strings, 
 	com palavras separadas por traços e verifica qual das strings tem um maior número de palavras. 
 	Por fim deve retornar um dos casos abaixo conforme as condições de entrada.
-	Ex:
-	    str1 = "casa - carro - placa" e str2 = "abóbora - peixe" => Deve retornar 'str1 > str2'
-	    str1 = ''abóbora - peixe'' e str2 = "casa - carro - placa" => Deve retornar 'str2 > str1'
-	    str1 = "casa - pé" e str2 = "chão - teto" => Deve retornar 'str1 = str2'
 */
 
 
