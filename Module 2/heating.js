@@ -8,10 +8,6 @@
 
     Crie uma função chamada temString(lst) que recebe uma lista verifica se existem strings nessa lista ou não. 
     Caso não exista string, deve retornar false, caso existam strings devem retornar true. Utilize uma variável do tipo booleano.
-
-    Ex:
-        lst = [12, 2, [ ], "dog", 4.5] => Deve retornar true
-        lst = [23, 12, 3, 2, 1] => Deve retornar false
 */
 
 
@@ -25,10 +21,6 @@ const hasString = (lst) => lst.filter(item => typeof item === 'string').length >
 
     Crie uma função chamada temDecimal(lst). 
     Ela deve retornar true caso existam números decimais nessa array, e false em caso contrário.
-
-    Ex:
-        lst = [12, 32, 'casa', 3] => Deve retornar false
-        lst = [4, 3.2, "roupa"] => Deve retornar true
 */
 
 
@@ -37,15 +29,14 @@ const hasDecimal = (lst) => lst.filter(item => typeof item === 'number' && item 
 
 
 /*
-    Create a function called hasTwoTypeNum(lst), it should return true if there are integers AND decimal numbers in this array, and false otherwise.
+    Create a function called hasTwoTypeNum(lst), it should return true if there are integers AND decimal numbers in this array
+    and false otherwise.
     Ex:
         lst = [12, 32, 'house', 3] => Should return false
         lst = [4, 3.2, "clothes"] => Should return true
 
-    Crie uma função chamada temDoisTiposNum(lst), ela deve retornar true caso existam números inteiros E números decimais nessa array, e false em caso contrário.
-    Ex:
-        lst = [12, 32, 'casa', 3] => Deve retornar false
-        lst = [4, 3.2, "roupa"] => Deve retornar true
+    Crie uma função chamada temDoisTiposNum(lst), ela deve retornar true caso existam números inteiros 
+    E números decimais nessa array, e false em caso contrário.
 */
 
 
