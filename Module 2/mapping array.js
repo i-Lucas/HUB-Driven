@@ -6,13 +6,8 @@
 		list = [1.5, 5, 15] => Should return [3, 10, 30]
 		list = [ ] => Should return [ ]
 
-
 	Crie uma função chamada dobraValores(lista) que recebe uma lista de valores numéricos, 
 	e retorna uma nova array com o mesmo número de elementos mas com os valores de cada elemento dobrados.
-	Exemplo:
-	    lista = [2, 4, 5] => Deve retornar [4, 8, 10]
-	    lista = [1.5, 5, 15] => Deve retornar [3, 10, 30]
-	    lista = [ ] => Deve retornar [ ]
 */
 
 
@@ -81,13 +76,8 @@ function successors(lst) {
 		lst = [ ] => Should return [ ]
 		lst = [5, 10, 15] => Should return [2.5, 5, 7.5]
 
-
 	Crie uma função chamada retornaMetade(lst), essa função recebe uma lista de números e para cada elemento 
 	divide o valor desse elemento por 2 e retorna uma nova lista com esses valores pela metade.
-	Ex:
-	    lst = [0, 2, 4, 8] => Deve retornar [0, 1, 2, 4]
-	    lst = [ ] => Deve retornar [ ]
-	    lst = [5, 10, 15] => Deve retornar [2.5, 5, 7.5]
 */
 
 
@@ -121,9 +111,6 @@ function returnHalf(lst) {
 
 	Crie uma função chamada numeroOposto(lst) que recebe uma lista de números e retorna uma nova lista, 
 	com os elementos com o valor oposto ao que encontramos na lista de entrada.
-	Ex:
-	    lst = [3, 2, -3, -4, 0, 5] => Deve retornar [-3, -2, 3, 4, 0, -5]
-	    lst = [ ] => Deve retornar [ ]
 */
 
 
@@ -244,8 +231,6 @@ function subsProprios(lst) {
 	Crie uma função chamada parAltaImparBaixa(lst), que recebe uma lista de strings, e mapeia essa string de uma 
 	forma que os elementos que estiverem em índices pares, fiquem reescritos em letra maiúscula e os elementos em 
 	índices ímpares sejam colocados em letras minúsculas.
-
-	Ex: lst = [ 'FAlsjfb', 'jfalsaW', 'fjALS', 'fdkjAFgh'] => Deve retornar ["FALSJFB", "jfalsaw", "FJALS", "fdkjafgh"]   
 */
 
 
@@ -310,10 +295,6 @@ function pairHighOddLow(lst) {
 	Crie uma função chamada foobooMultiplos(lst), que recebe uma lista com números e mapeia essa lista de uma forma os números múltiplos 
 	de 3 sejam substituídos por 'foo', e aqueles que são múltiplos de 5 sejam substituídos por 'boo'. 
 	Números que sejam simultânemante múltiplos de 3 e 5 devem ser mapeados para 'fooboo'
-	Ex:
-	    lst = [3, 4, 1, 3, 5, 15, 7] => Deve retornar ['foo', 4, 1, 'foo', 'boo', 'fooboo', 7]
-	    lst = [ ] => Deve retornar [ ]
-	    lst = [5, 30, 3] => Deve retornar ['boo', 'fooboo', 'foo'] 
 */
 
 
