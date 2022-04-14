@@ -7,14 +7,11 @@
 
     Escreva uma função ordenaNumeros(numeros) que recebe um array de números como parâmetro e retorna 
     um array dos números ordenados em ordem crescente.
-    Ex:
-        numeros = [10, 2, 1, 5] => Deve retornar [1, 2, 5, 10]
-        numeros = [] => Deve retornar []
 */
 
 
 // solution
-function ordenaNumeros(numeros) {
+function sortNumbers(numeros) {
     return numeros.sort((a, b) => a - b)
 }
 
@@ -24,18 +21,15 @@ function ordenaNumeros(numeros) {
      returns an array of strings sorted alphabetically, but backwards.
 
     Ex:
-        strings = ["Brasil", "Argentina", "Chile"] => Should return ["Chile", "Brasil", "Argenti
+        strings = ["Brasil", "Argentina", "Chile"] => Should return ["Chile", "Brasil", "Argentina"]
 
     Escreva uma função ordenaStrings(strings) que recebe um array de strings como parâmetro e 
     retorna um array das strings ordenada alfabeticamente, mas de trás para frente.
-
-    Ex:
-        strings = ["Brasil", "Argentina", "Chile"] => Deve retornar ["Chile", "Brasil", "Argentina"]
 */
 
 
 // solution
-function ordenaStrings(strings) {   
+function sortStrings(strings) {   
     return strings.sort((a, b) => b.localeCompare(a))
 }
 
@@ -68,7 +62,7 @@ function ordenaStrings(strings) {
 
 
 // solution
-function ordenaPessoas(pessoas) {
+function sortPeople(pessoas) {
 
     return pessoas.sort((a, b) => {
 
@@ -91,14 +85,10 @@ function ordenaPessoas(pessoas) {
 
     Escreva uma função chamada ordenaNumeros(numeros) que recebe um array de números 
     como parâmetro e retorna um array dos números ordenados em ordem decrescente.
-
-    Ex:
-        numeros = [1, 2, 4, 10, 0] => Deve retornar [10, 4, 2, 1, 0]
-        numeros = [] => Deve retornar []
 */
 
 
 // solution
-function ordenaNumeros(numeros) {
+function sortNumbers(numeros) {
     return numeros.sort((a, b) => b - a)
 }
