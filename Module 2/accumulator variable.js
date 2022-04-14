@@ -90,10 +90,6 @@ function sumIntegers(list) {
 
     Faça uma função chamada convertAndSum(lst), essa função recebe uma lista que contém strings numéricas, 
     e deve retornar o valor relativo a soma dos números nessas strings.
-
-    Ex:
-        lst = ["15", "5", "10"] => Deve retornar 30
-        lst = ["5.5", "6.5", "12"] => Deve retornar 24
 */
 
 
@@ -173,10 +169,6 @@ function product(lst) {
 
     Crie uma função chamada productEvenNumbers(lst), que recebe uma lista de números inteiros e acumula em uma variável 
     o produto dos números pares encontrados nessa lista. Retorne o valor dessa variável. Caso não existam números pares retorne -1.
-
-    Ex:
-        lst = [3, 1, 2, 4, 5] => Deve retornar 8
-        lst = [1, 1, 1, 3] => Deve retornar -1
 */
 
 
@@ -262,10 +254,6 @@ function accumulateString(lst) {
 
     Faça uma função chamada acumulaVogais(lst), que recebe uma lista contendo strings de um único caracter cada, 
     e acumule em uma string todas as vogais dessa lista. Retorne a string das variáveis acumuladas.
-    Ex:
-        lst = ["u", "r", "u", "b", "u"] => Deve retornar "uuu"
-        lst = ["a", "z", "e", "i", "t", "o", "u"] => Deve retornar "aeiou"
-        lst = ["v", "l", "w"] => Deve retornar ""
 */
 
 
@@ -315,9 +303,6 @@ function accumulateVowels(lst) {
 
     Escreva uma função chamada apenasLetras(lst), que recebe uma lista de strings, e pega apenas as strings que são compostas por 1 caracter. 
     Ela deve acumular essas letras em uma variável e retornar a palavra formada por elas.
-    Ex:
-        lst = ['A', 'm', 'mar', 'carro', 'o', 'dor', 'r'] => Deve retornar 'Amor'
-        lst = ['avião', 'sonho', 'SOM', 'azul'] => Deve retornar ''
 */
 
 
@@ -372,10 +357,6 @@ function justLetters(lst) {
     dos números positivos e a variável dos números negativos.
 
     Dica: Para pegar um valor absoluto de uma variável você pode utilizar a ferramenta Math
-
-    Exemplo:
-        lst = [-2, 5, -2] => Deve retornar 1
-        lst = [2, -5, 2] => Deve retornar -1
 */
 
 
@@ -432,10 +413,6 @@ function deltaPN(lst) {
 
     Crie uma função chamada expoenteDaBaseDois(n), que recebe um número que é potência de 2 e que
     deve decompor esse número e descobrir qual o expoente dessa potência.
-    Ex:
-        n = 16 => Deve retornar 4, porque 16 = 2^4
-        n = 1024 => Deve retornar 10
-        n = 1 => Deve retornar 0
 */
 
 
