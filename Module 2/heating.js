@@ -1,5 +1,5 @@
 /*
-    Create a function called temString(lst) that takes a list checks if there are strings in that list or not.
+    Create a function called hasString(lst) that takes a list checks if there are strings in that list or not.
     If there is no string, it must return false, if there are strings, it must return true. Use a boolean variable.
 
     Ex:
@@ -16,11 +16,11 @@
 
 
 // solution
-const temString = (lst) => lst.filter(item => typeof item === 'string').length > 0
+const hasString = (lst) => lst.filter(item => typeof item === 'string').length > 0
 
 
 /*
-    Create a function called temDecimal(lst).
+    Create a function called hasDecimal(lst).
     It should return true if there are decimal numbers in this array, and false otherwise.
 
     Crie uma função chamada temDecimal(lst). 
@@ -33,7 +33,7 @@ const temString = (lst) => lst.filter(item => typeof item === 'string').length >
 
 
 // solution
-const temDecimal = (lst) => lst.filter(item => typeof item === 'number' && item % 1 !== 0).length > 0
+const hasDecimal = (lst) => lst.filter(item => typeof item === 'number' && item % 1 !== 0).length > 0
 
 
 /*
@@ -50,7 +50,7 @@ const temDecimal = (lst) => lst.filter(item => typeof item === 'number' && item 
 
 
 // solution
-function temDoisTiposNum(lst) {
+function hasTwoTypeNum(lst) {
 
     const dec = lst.filter(item => typeof item === 'number' && item % 1 !== 0);
     const int = lst.filter(item => typeof item === 'number' && item % 1 === 0);
