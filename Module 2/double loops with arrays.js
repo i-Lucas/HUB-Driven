@@ -1,5 +1,5 @@
 /*
-    Create a function called temOposto(lst) that takes an array and checks if at some point
+    Create a function called hasOpposite(lst) that takes an array and checks if at some point
     we have an element that is the opposite of another element of the same array. The function must return true
     if it finds this case and false otherwise. The opposite of a number is multiplying it by -1,
     i.e. the opposite of 2 is -2 and the opposite of -5 is 5.
@@ -9,21 +9,15 @@
         lst = [2, 3, 4, 2] => Should return false
         lst = [-3, 1, 3, 8, 4, -8] => Must return true
 
-
     Crie uma função chamada temOposto(lst) que recebe uma array e verifica se em algum momento 
     temos um elemento que é o oposto de outro elemento da mesma array. A função deve retornar true 
     caso ela encontre esse caso e false caso contrário. O oposto de um número é a multiplicação dele por -1, 
     ou seja, o oposto de 2 é -2 e o oposto de -5 é 5.
-
-    Ex:
-        lst = [2, 4, 5, -2] => Deve retornar true
-        lst = [2, 3, 4, 2] => Deve retornar false
-        lst = [-3, 1, 3, 8, 4, -8] => Deve retornar true
 */
 
 
 // solution
-function temOposto(lst) {
+function hasOpposite(lst) {
 
     for (let i = 0; i < lst.length; i++) {
         for (let j = 0; j < lst.length; j++) {
@@ -48,16 +42,9 @@ function temOposto(lst) {
         lst = [ ] => Should return false
         lst = [0, 2] => Should return false
 
-
     Crie uma função chamada procuraDobrado(lst), que recebe uma lista de números e verifica 
     para cada número se existe algum outro elemento nessa lista que possuí o dobro do valor desse número. 
     Deve retornar true caso exista esse cenário e false caso contrário.
-    Ex:
-        lst = [3, 2, 1] => Deve retornar true
-        lst = [5, 2, 6, 8, 4] => Deve retornar true
-        lst = [5, 7, 11] => Deve retornar false
-        lst = [ ] => Deve retornar false
-        lst = [0, 2] => Deve retornar false
 */
 
 
@@ -102,17 +89,11 @@ function findDouble(lst) {
 
     Crie uma função chamada verificaRepetidos(lst) que recebe uma lista de números e
     retorna uma nova lista que contém os números que aparecem mais de uma vez na lista de entrada.
-
-    Ex:
-        lst = [1, 2, 3, 1, 2, 3, 4, 5] => Deve retornar [1, 2, 3]
-        lst = [1, 1, 1, 1, 1, 1] => Deve retornar [1]
-        lst = [1 , 2, 3, 4] => Deve retornar [ ]
-        lst = [ ] => Deve retornar [ ]
 */
 
 
 // solution
-function verificaRepetidos(lst) {
+function checkRepeat(lst) {
 
     let array = []
     for (let i = 0; i < lst.length; i++) {
@@ -136,15 +117,9 @@ function verificaRepetidos(lst) {
         lst = ["house", "sky", "moon", "yes", "no", "sea", "door"] => Should return "sky moon yes no sea"
         lst = [ ] => Must return an empty string
 
-
     Crie uma função chamada tamanhoStrings(lst) que recebe uma lista e verifica se existem strings do mesmo tamanho nessa lista. 
     Caso existam strings de mesmo tamanho, essa função deve retornar uma nova string com as strings de tamanho igual 
     concatenadas e separadas por espaço. Caso contrário essa função deve retornar uma string vazia
-    Ex:
-        lst = ["casa", "apartamento", "porta"] => Deve retornar uma string vazia
-        lst = ["moto", "carro", "pastel", "fruta"] => Deve retornar "carro fruta"
-        lst = ["casa", "céu", "lua", "sim", "não", "mar", "porta"] => Deve retornar "céu lua sim não mar"
-        lst = [ ] => Deve retornar uma string vazia
 */
 
 
@@ -192,8 +167,6 @@ function lengthStrings(lst) {
     Implemente a função valorImediatamenteMenor(arr) que recebe um array de números como parâmetro e retorna um outro array 
     em que na posição i de cada elemento do array original deve estar o valor imediatamente menor do que o valor original 
     encontrado na array. Se não houver valor imediatamente menor deve ser o mesmo valor.
-
-    Ex: [5, 10, 13, 2, 1] deve retornar -> [2, 5, 10, 1, 1] 
 */
 
 
@@ -225,11 +198,6 @@ function ImmediateMinorValue(arr) {
 
     Crie uma função chamada acumulaPares(lst) que recebe uma lista de inteiros e retorna a soma dos 
     elementos que aparecem exatamente duas vezes na lista.
-    Ex:
-        lst = [1, 2, 2, 3, 4, 4, 5] => Deve retornar 12
-        lst = [1, 2, 3, 4, 5] => Deve retornar 0
-        lst = [1, 1, 1, 1, 1, 1] => Deve retornar 0
-        lst = [5, 5, 5, 3, 3, 5, 5, 5] => Deve retornar 6
 */
 
 
