@@ -6,7 +6,6 @@
 
 	Crie uma função chamada maiorNumero(lista), que recebe uma array e retorna o maior número dessa array. 
 	Caso a array esteja vazia, retorne null.
-	Exemplo: lista = [10, 20, -30, -100, 50, 20] => deve retornar 50
 */
 
 
@@ -42,7 +41,6 @@ function largestNumber(list) {
 
 /*
 	Create a function called smallestNumber(lst), which takes an array and returns the smallest number from that array.
-
 	Crie uma função chamada menorNumero(lst), que recebe uma array e retorna o menor número dessa array.
 */
 
@@ -86,13 +84,8 @@ function smallestNumber(lst) {
 		lst = [3, 10, -1] => Should return -1
 		lst = [2, 4, 6, 8] => Must return null
 
-
 	Crie uma função chamada ultimoImpar(lst), que recebe uma array como entrada que deve ser atravessada em busca do último elemento ímpar. 
 	Deve retornar o último valor ímpar encontrado. Caso não seja encontrado nenhum valor ímpar, deve ser retornado null.
-	Ex:
-	    lst = [7, 3, 9, 10] => Deve retornar 9
-	    lst = [3, 10, -1] => Deve retornar -1
-	    lst = [2, 4, 6, 8] => Deve retornar null
 */
 
 
@@ -141,15 +134,9 @@ function lastOdd(lst) {
 		lst = [5, 'water', 'sea', ['test']] => Should return 'water'
 		lst = [1, 2, 3] => Must return null
 
-
 	Crie uma função chamada maiorString(lst), que recebe uma array podendo conter qualquer tipo de estrutura e variável, 
 	e que deve retornar a string com o maior comprimento dentro dessa array, caso exista mais de uma "maior string" a 
 	função deve retornar a última a ser encontrada. Caso não existam strings na lista deve retornar null.
-	Ex:
-
-	    lst = ['peixe', 34.1, 'fogo', 'pular', 7] => Deve retornar 'pular'
-	    lst = [5, 'água', 'mar', ['teste']] => Deve retornar 'água'
-	    lst = [1, 2, 3] => Deve retornar null
 */
 
 
@@ -212,14 +199,9 @@ function largestString(lst) {
 		lst = ["", "", ""] => Should return 2
 		lst = ["No", "Yes"] => Should return -1
 
-
 	Crie uma função chamada posLastEmpty(lst), que recebe uma lista de strings, 
 	que podem estar vazias ou não e retorna o índice que representa a posição da última string vazia. 
 	Caso não sejam encontradas strings vazias essa função deve retornar -1.
-	Ex:
-	    lst = ["casa", "", "mar", "agua, "", "céu"] => Deve retornar 4
-	    lst = ["", "", ""] => Deve retornar 2
-	    lst = ["Não", "Sim"] => Deve retornar -1
 */
 
 
@@ -261,12 +243,8 @@ function posLastEmpty(lst) {
 		lst = [3.2, 5, 7.1, 5.4, 3] => Should return 3.2
 		lst = [3, 4, 5] => Must return null
 
-
 	Crie uma função chamada menorDecimal(lst), que recebe uma lista e retorna o menor número em formato decimal encontrado na lista. 
 	Caso não existam números no formato decimal retorne null.
-	Ex:
-	    lst = [3.2, 5, 7.1, 5.4, 3] => Deve retornar 3.2
-	    lst = [3, 4, 5] => Deve retornar null
 */
 
 
@@ -330,12 +308,8 @@ function smallestDecimal(lst) {
 		lst = [9423, 5.6, 6.4, 8.1] => Should return 0.6
 		lst = [2.2, 2.27] => Should return 0.27
 
-
 	Crie uma função chamada maiorParteDecimal(lst), que recebe uma lista de números decimais e retorna a maior parte decimal, 
 	entre os números decimais.
-	Ex:
-	    lst = [9.423, 5.6, 6.4, 8.1] => Deve retornar 0.6
-	    lst = [2.2, 2.27] => Deve retornar 0.27
 */
 
 
