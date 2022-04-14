@@ -4,11 +4,8 @@
 
 	Input: lst = [8, 4, 4, 2, 4,12, 7, 6, 5] => Should return 12
 
-
 	Crie uma função chamada multiploDeSeis(lst), que recebe uma lista e retorna o primeiro valor múltiplo de seis encontrado nessa array. 
 	Caso não seja encontrado múltiplos de 6, a função deve retornar -1.
-
-	Entrada: lst = [8, 4, 4, 2, 4,12, 7, 6, 5] => Deve retornar 12
 */
 
 
@@ -40,12 +37,8 @@ function multipleOfSix2(lst) {
 	Ex: lst = ["rice", "land", "sky", "water"] => Should return "sky"
 	lst = ["car", "engineering"] => Should return ""
 
-
 	Crie uma função chamada string3(lst), que recebe uma lista de strings e retorna a primeira string de 3 letras encontrada. 
 	Caso não exista strings de tamanho 3, retorne uma string vazia.
-
-	Ex: lst = ["arroz", "terra", "céu", "água"] => Deve retornar "céu"
-	lst = ["carro", "engenharia"] => Deve retornar ""
 */
 
 
@@ -62,7 +55,7 @@ function string3(lst) {
 
 
 // solution 2
-function string3s2(lst) {
+function string3(lst) {
 
 	let r = lst.find(element => element.length === 3)
 	if(r !== undefined) return r
@@ -77,12 +70,8 @@ function string3s2(lst) {
 	Ex: lst = [3, 2, -5, -2, 5, -7, 12.5] => Should return -2
 		lst = [32, 2, 45, 22, 6, 234, 4] => Should return false
 
-
 	Crie uma função que se chama numParNegativo(lst), que recebe uma array de números e deve retornar o primeiro 
 	valor que é simultânemente par e negativo. Caso não exista valores desse tipo, a função deve retornar false.
-
-	Ex:	lst = [3, 2, -5, -2, 5, -7, 12.5] => Deve retornar -2
-	    lst = [32, 2, 45, 22, 6, 234, 4] => Deve retornar false
 */
 
 
@@ -116,12 +105,8 @@ function negativePar2(lst) {
 	Ex: lst = [2, 4.3, [3, -5], [], "car", 32, "technician"] => Should return "car"
 		lst = [2, 4, 3.4, [-7, -2], 5, 6] => Should return false
 
-
 	Faça uma função chamada primeiraString(lst), que recebe uma lista e retorna a primeira string encontrada nessa lista. 
 	Caso não existam strings nessa lista, a função deve retornar false.
-
-	Ex: lst = [2, 4.3, [3, -5], [], "carro", 32, "técnico"] => Deve retornar "carro"
-	    lst = [2, 4, 3.4, [-7, -2], 5, 6] => Deve retornar false 
 */
 
 
@@ -153,11 +138,8 @@ function firstString2(lst) {
 
 	Ex: lst = [3, 4.3, 3, 77] => Should return 4.3
 
-
 	Crie uma função chamada primeiroDecimal(lst), essa função recebe uma array e retorna o 
-	primeiro número decimal que ela encontrar na array, caso não existam números decimais, essa função deve retornar -1.
-
-	Ex: lst = [3, 4.3, 3, 77] => Deve retornar 4.3	    
+	primeiro número decimal que ela encontrar na array, caso não existam números decimais, essa função deve retornar -1.  
 */
 
 
@@ -195,13 +177,9 @@ function firstDecimal2(lst) {
 	Ex: x = 5, lst = [2, 8, 4, 15, 5, 12] => Should return 3
 		x =123 lst = [1, 2, 3, 4] => Should return -1
 
-
 	Escreva uma função chamada multiploDe(x, lst), que recebe dois parâmetros, o primeiro é um número inteiro, 
 	e o segundo é uma array de números inteiros. A função deve procurar o primeiro múltiplo de x e retornar o índice desse elemento. 
 	Caso não encontre nenhum múltiplo ao atravessar a array deve retornar -1.
-
-	Ex: x = 5, lst = [2, 8, 4, 15, 5, 12] => Deve retornar 3
-		x =123 lst = [1, 2, 3, 4] => Deve retornar -1
 */
 
 
@@ -235,12 +213,9 @@ function multipleOf2(x, lst) {
 
 	Ex: lst = [12, 4, 8, 2, 7, 10, 4, 2] => Should return 5
 
-
 	Cria uma função chamada valorDobraIndice(lst), que recebe uma lista de inteiros e que analisa 
 	essa lista em procura de um caso onde o valor do elemento seja o dobro do índice que aquele elemento ocupa. 
 	Retorne o valor do índice caso exista esse caso, e false caso contrário.
-
-	Ex: lst = [12, 4, 8, 2, 7, 10, 4, 2] => Deve retornar 5
 */
 
 
@@ -251,8 +226,6 @@ function doubleIndexValue(lst) {
 
         let element = lst[i]
         let index = lst.indexOf(element)
-
-        // console.log(`${element} ${index}`)
 
         if ((element / 2) === index) {
             return index
@@ -288,14 +261,9 @@ function doubleIndexValue2(lst) {
 		lst = [2, 6, 4, 3, 1] => Should return 4
 		lst = [2, 6, 5, 3, 1] => Should return -1
 
-
 	Escreva uma função chamada indiceAoQuadrado(lst), que recebe uma array de inteiros e verifica se algum elemento 
 	tem o valor da sua posição na array elevado ao quadrado. Retorne o valor desse elemento. 
 	Se não existir um elemento que atenda a essa condição retorne -1
-	Ex:
-		lst = [3, 2, 4, 9, 8] => Deve retornar 9
-		lst = [2, 6, 4, 3, 1] => Deve retornar 4
-		lst = [2, 6, 5, 3, 1] => Deve retornar -1
 */
 
 
@@ -338,11 +306,8 @@ function squareIndex2(lst) {
 
 	Ex: lst = [4, 1, -3, 3, -2, 5, 12] => Should return -2
 
-
 	Crie uma função chamada ultimoNegativo(lst) que recebe uma array, e precisa retornar o valor do elemento 
-	com o maior índice dessa array que é negativo. Caso a função não encontre valores negativos deve retornar false.
-
-	Ex: lst = [4, 1, -3, 3, -2, 5, 12] => Deve retornar -2	    
+	com o maior índice dessa array que é negativo. Caso a função não encontre valores negativos deve retornar false.   
 */
 
 
