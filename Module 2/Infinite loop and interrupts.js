@@ -26,21 +26,6 @@
     A senha também deve conter no mínimo 8 caracteres. 
     Enquanto a função não validar a senha ela deve imprimir "Senha Inválida" e perguntar uma nova senha ao usuário. 
     Quando a senha for inserida corretamente pelo usuário a função deve ser finalizada e deve retornar 1.
-
-    function validaSenha(hub){
-        const letrasMaiusculas = /[A-Z]/
-        const letrasMinusculas = /[a-z]/
-        const numeros = /[0-9]/
-        const charEspeciais = /[!|@|#|$|%|^|&|*|(|)|-|_]/
-        let senha = hub.perguntaSenha()
-    
-        return 1;
-    }
-
-    Obs.: O parâmetro hub contém a função auxiliar para essa questão.
-    Ex:
-        Se a senha é 'Aa0!' => Deve retornar "Senha Inválida" e perguntar uma nova senha ao usuário
-        Se a senha é 'Aaaaaa0!' => Deve finalizar a execução e retornar 1
 */
 
 
@@ -92,10 +77,6 @@ function validPassword(hub){
 
     Crie uma função chamada pareEmZero(lst) que recebe uma lista de números inteiros e enquanto atravessa a lista soma os elementos. 
     O loop deve ser interrompido caso a função encontre um elemento com valor 0 na lista.
-    Ex:
-        lst = [1, 2, 3, 4, 0, 5, 3] => Deve retornar 10
-        lst = [0, 1, 3, 2] => Deve retornar 0
-        lst = [3, 4, 2, 1, 5] => Deve retornar 15
 */
 
 
@@ -134,11 +115,6 @@ function stopEmZero(lst) {
 
     Crie uma função descarta(x, y, lst), que recebe dois números x e y e uma lista. 
     A função deve retornar uma nova lista descartando os elementos presentes nos índices x e y da lista recebida.
-
-    Ex:
-        x = 2, y = 5, lst = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] => Deve retornar [0, 1, 3, 4, 6, 7, 8, 9]
-        x = 2, y = 0, lst = ['arroz', 'feijão', 'milho', 'azeitona', 'couve'] => Deve retornar ['feijão', 'azeitona', 'couve']
-        x = 1, y = 1, lst = [ ] => Deve retornar [ ]
 */
 
 
@@ -174,13 +150,6 @@ function discard(x, y, lst) {
     Crie uma função chamada paraNoDobro(lst), que recebe uma lista e itera por essa lista enquanto
     soma os elementos até chegar ao final, ou até encontrar um elemento que possuí um valor que é o
     dobro do índice que esse elemento ocupa. Retorne a soma acumulada incluindo o valor de parada.
-    Ex:
-        lst = [0, 5, 6, 7] => Deve retornar 0
-        lst = [ ] => Deve retornar 0
-        lst = [1, 2, 3, 5] => Deve retornar 3
-        lst = [9, 0, 1, 3, 7,10, 9, 8] => Deve retornar 30
-        lst = [8, 3, 3, 6, 31, 100, 67] = Deve retornar 20
-
 */
 
 
