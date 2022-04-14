@@ -6,13 +6,8 @@
 		list = [4, 4, 2] => Should return [ ]
 		list = [ ] => Should return [ ]
 
-
 	Crie uma função chamada filtraImpares(lista) que recebe uma lista de números inteiros e retorna uma nova lista 
 	contendo apenas os números ímpares da lista original.
-	Ex:
-	    lista = [4, 3, 1, 3, 4] => Deve retornar [3, 1, 3]
-	    lista = [4, 4, 2] => Deve retornar [ ]
-	    lista = [ ] => Deve retornar [ ]
 */
 
 
@@ -34,12 +29,7 @@ const filterOdd1 = (list) => list.filter(number => number % 2 !== 0)
 		lst = [ 5.3, 5.1, 5.0, 'potato', 9.0, 10 ] => Should return [5.0, 9.0]
 		lst = [ ] => Should return [ ]
 
-
-	Reescreva a função chamada filtraImpares(lst), que filtra uma lista retornando uma nova lista apenas com os números ímpares.
-	Ex:
-	    lst = ['arroz', 5, 4, 3.6, 2, 5.4, 0, 'feijão', 7, 9, 8.2] => Deve retornar [5, 7, 9]
-	    lst = [ 5.3, 5.1, 5.0, 'batata', 9.0, 10 ] => Deve retornar [5.0, 9.0]
-	    lst = [ ] => Deve retornar [ ]
+	Reescreva a função chamada filtraImpares(lst), que filtra uma lista retornando uma nova lista apenas com os números ímpares.[ ]
 */
 
 
@@ -62,13 +52,8 @@ const filterOdd2 = (list) => list.filter(number => number % 2 !== 0 && typeof (n
 		lst = [2, 4, 6, 4, 6, 7, 5] => Should return -1
 		lst = [2, 4, 23, 24, 4, 2] => Should return [24]
 
-
 	Crie uma função chamada maior23(lst) que recebe uma lista de números e verifica se algum dos números é maior que 23. 
 	Retorne uma outra lista com os valores maiores que 23. Caso não exista valores maiores que 23, retorne -1.
-	Ex:
-	    lst = [2, 1, 34, 1, 31, 43, 2, 7] => Deve retornar [34, 31, 43]
-	    lst = [2, 4, 6, 4, 6, 7, 5] => Deve retornar -1
-	    lst = [2, 4, 23, 24, 4, 2] => Deve retornar [24]
 */
 
 
@@ -93,14 +78,9 @@ const greater23a = (list) => list.filter(number => number > 23).length === 0 ? -
 		x = 0, lst = [5, 4, -2, 4, 2, -6, 3] => Should return [-2, -6]
 		x = -10, lst = [3, 4, 2, 5, 23, 5] => Should return [ ]
 
-
 	Crie uma função chamada menorQue(x, lst), que recebe dois parâmetros, o primeiro é um número e o segundo é uma lista de números. 
 	A partir do número recebido como entrada, sua função deve atravessar a lista de entrada e retornar uma array que contenha
-	todos os números menores que x, encontrados em lst. Caso não existam números menores do x, deve retornar uma array vazia.
-	Ex:
-	    x = 15, lst = [ 10, 16, 9, 15, 2, 20] => Deve retornar [10, 9, 2]
-	    x = 0, lst = [5, 4, -2, 4, 2, -6, 3] => Deve retornar [-2, -6]
-	    x = -10, lst = [3, 4, 2, 5, 23, 5] => Deve retornar [ ]
+	todos os números menores que x, encontrados em lst. Caso não existam números menores do x, deve retornar uma array vazia.]
 */
 
 
@@ -122,12 +102,8 @@ const lessthan2 = (x, list) => list.filter(number => number < x)
 		lst = ["cheese", "yes", "love", "heaven", "a", "dog" ] => Should return ["yes", "heaven", "a"]
 		lst = [ ] => Should return [ ]
 
-
 	Crie uma função chamada filtraTamTres(lst) que recebe uma lista de strings e filtra essa lista retornando 
 	para gente uma nova lista contendo apenas as strings que possuem tamanho menor ou igual a três.
-	Ex:
-	    lst = ["queijo", "sim", "amor", "céu", "a", "cachorro" ] => Deve retornar ["sim", "céu", "a"]
-	    lst = [ ] => Deve retornar [ ]
 */
 
 
@@ -147,10 +123,8 @@ const filterTamTres2 = (list) => list.filter(string => string.length < 3)
 	ista containing only the words starting with the letter 'a' from our original list. This function must not be case sensitive.
 	Ex: lst = ['House', 'plane', 'shop', 'amor', 'Ana'] => Should return ['plane', 'amor', 'Ana'
 
-
 	Crie uma função chamada filtraPalavrasComA(lst) essa função recebe uma lista de strings e deve retornar uma nova l
 	ista contendo apenas as palavras que começam com a letra 'a' da nossa lista original. Essa função não deve ser case sensitive.
-	Ex: lst = ['Casa', 'avião', 'loja', 'amor', 'Ana'] => Deve retornar ['avião', 'amor', 'Ana	 
 */
 
 
@@ -173,13 +147,8 @@ const filterWordsWithA2 = (list) => list.filter(string => string[0] === 'a' || s
 		lst = ['t', 'k', 't'] => Should return [ ]
 		lst = [ ] => Should return [ ]
 
-
 	Crie uma função chamada filtraVogais(lst) que recebe uma lista com caracteres e que retorna 
 	uma nova lista apenas com as vogais que aparecem na lista original.
-	Ex:
-	    lst = ['g', 'h', 'o', 'o', 'i', 't'] => Deve retornar ['o', 'o', 'i'];
-	    lst = ['t', 'k', 't'] => Deve retornar [ ]
-	    lst = [ ] => Deve retornar [ ]
 */
 
 
@@ -200,9 +169,6 @@ function filterVowels(list) {
 
 	Crie uma função chamada subsProprio(lst) que recebe uma lista com substantivos e deve retornar 
 	uma outra lista contendo apenas os substantivos próprios da lista original.
-	Ex:
-	    lst = ['carro', 'André', 'João', 'avião', 'moto'] => Deve retornar ['André', 'João']
-	    lst = [ ] => Deve retornar [ ]
 */
 
 
