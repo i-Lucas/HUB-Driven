@@ -45,18 +45,6 @@ function sumTable() {
     Crie uma função chamada imprimeSequencias(num), 
     que recebe um número representando o total de linhas e imprime todas as strings 
     usando loops aninhados seguindo o seguinte formato:
-
-    Ex:
-    imprimeSequencias(9), deve imprimir:
-
-        '1'
-        '12'
-        '123'
-        '1234'
-        ...
-        ...
-        '123456789'
-
 */
 
 
@@ -86,11 +74,6 @@ function printSequences(num) {
     Faça uma função chamada allSubstrings(str), 
     que recebe uma string de uma palavra e deve retornar uma lista contendo todas as subtrings possíveis com as letras dessa palavra. 
     A ordem não é avaliada nos testes.
-
-    Ex:
-        str = 'test' => Deve retornar ['t', 'e', 's', 't', 'te', 'es', 'st', 'tes', 'est', 'test']
-        str = 'baba' => Deve retornar ['b', 'a', 'b', 'a', 'ba', 'ab', 'ba', 'bab', 'aba', 'baba']
-
 */
 
 
@@ -123,14 +106,6 @@ function allSubstrings(str) {
 
     Crie uma função chamada printList(num) que recebe um número e imprime um número de linhas 
     igual ao parâmetro de entrada, de modo decrescente, até 1.
-
-    Ex:
-    imprimeAi(4) deve imprimir:
-
-        4 3 2 1
-        3 2 1
-        2 1
-        1
 */
 
 
@@ -169,19 +144,6 @@ function printList(num) {
 
     Cria a função chamada imprimePadrao(numLinhas), que recebe um número e imprime, 
     de modo crescente a partir do número 1 até o número recebido, em seguida, de modo decrescente, até o número 1.
-
-    Ex:
-    imprimePadrão(5) deve imprimir:
-
-        1
-        1 2
-        1 2 3
-        1 2 3 4
-        1 2 3 4 5
-        1 2 3 4
-        1 2 3
-        1 2
-        1
 */
 
 
@@ -234,16 +196,6 @@ function printPattern(row) {
     9 x 9 = 81
 
     Crie uma função chamada imprimeTabuada() que imprime a tabuada, a partir do 1 até o 9, de todos os números.
-    Ex: imprimeTabuada() deve imprimir:
-    
-    1 x 1 = 1
-    1 x 2 = 2
-    1 x 3 = 3
-    ...
-    ...
-    9 x 8 = 72
-    9 x 9 = 81
-
 */
 
 
@@ -271,20 +223,11 @@ function printTable() {
     10 20 30...90 100
 
     Crie a função chamada tabelaTabuada(), que imprime os valores da tabuadas, de 1 a 10, seguindo o seguinte padrão de matriz:
-    Ex: tabelaTabuada() deve imprimir:
-
-    1 2 3 ... ...9 10
-    2 4 8 ... ...18 20
-    3 6 9 ... ... 27 30
-    ... ... .... ... ... ....
-    ... ... .... ... ... ....
-    9 18 27 ...81 90
-    10 20 30...90 100
 */
 
 
 // solution
-function tabelaTabuada() {
+function tableTable() {
 
     let array = []
 
