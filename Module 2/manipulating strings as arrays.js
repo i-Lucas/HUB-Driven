@@ -1,15 +1,13 @@
 /*
-	Create a function called countC(str) that traverses a string and returns the total amount of 'c' letters that appear in the string.
+	Create a function called countC(str) that traverses a string and returns the total amount of 'c' letters 
+	that appear in the string.
 	Ex:
 		str = 'carcará' => Must return 2
 		str = 'feature' => Should return 3
 		str = '' => Must return 0
 
-	Crie uma função chamada contaC(str) que atravessa uma string e retorna a quantidade total de letras 'c' que aparecem na string.
-	Ex:
-	    str = 'carcará' => Deve retornar 2
-	    str = 'característica' => Deve retornar 3
-	    str = '' => Deve retornar 0
+	Crie uma função chamada contaC(str) que atravessa uma string e retorna a quantidade total de letras 'c' 
+	que aparecem na string.
 */
 
 
@@ -37,11 +35,6 @@ function countC(str) {
 
 	Crie uma função chamada mudaVogal(str), que recebe uma string e retorna uma nova string onde as as vogais "a" 
 	foram substituídas por "e".
-	Ex:
-	    str = "ateu" => Deve retornar "eteu"
-	    str = "maca" => Deve retornar "mece"
-	    str = "bcd" => Deve retornar "bcd"
-	    str = "" => Deve retornar ""
 */
 
 
@@ -71,11 +64,6 @@ function changeVogal(str) {
 
 	Crie uma função chamada temK(str), que recebe uma string e verifica se existe a letra 'k' nessa string e
 	retorna o índice que representa a posição dessa letra. Caso a string não possua 'k' deve retornar -1.
-	Ex:
-	    str = 'king' => Deve retornar 0
-	    str = 'strike' => Deve retornar 4
-	    str = 'abcd' => Deve retornar -1
-	    str = '' => Deve retornar -1
 */
 
 
@@ -100,9 +88,6 @@ function haveK(str) {
 
 	Crie uma função chamada deslocaLetras(str), que recebe uma string e move todos os caracteres
 	uma posição para esquerda, transformando o primeiro carácter na último.
-	Ex:
-	    str = 'abcd' => Deve retornar 'bcda'
-	    str = '1234' => Deve retornar '2341'
 */
 
 
@@ -138,10 +123,6 @@ function shiftLetters(str){
 
 	Crie uma função chamada indexNum(str), que recebe uma string e retorna uma lista com o valor dos 
 	índices nas posições da string recebida onde existem números.
-	Ex:
-	    str = "1abc23" => Deve retornar [0, 4, 5]
-	    str = "abc3d3" => Deve retornar [3, 5]
-	    str = "abc" => Deve retornar [ ]
 */
 
 
@@ -189,10 +170,6 @@ function indexNum(str) {
 
 	Crie uma função chamada adicionaCedilha(str, x), que recebe uma string e adiciona um "ç" na posição x da string, 
 	empurrando as letras para direita. Caso não exista posição x, adicione a letra no final da string.
-	Ex:
-	    x = 3, str = 'facão' => Deve retornar 'facção
-	    x = 19, str = 'Matagal' => Deve retornar 'Matagalç'
-	    x = 13, str = '' => Deve retornar 'ç'
 */
 
 
@@ -217,11 +194,6 @@ const addCedilha2 = (str, x) => x === undefined ? str + 'ç' : str.substr(0, x) 
 		str = ' ' => Must return ' '
 
 	Crie uma função chamada removeL(str) que recebe uma string e retorna uma nova string sem as letras 'l'.
-	Ex:
-	    str = 'leão' => Deve retornar 'eão'
-	    str = 'lulu' => Deve retornar 'uu'
-	    str = 'la la land' => Deve retornar 'a a and'
-	    str = ' ' => Deve retornar ' '
 */
 
 
@@ -251,10 +223,6 @@ function removeL(str){
 		str = "" => Should return "()"
 
 	Cria uma função chamada insereParenteses(str) que recebe uma string e retorna a string dentro de parênteses.
-	Ex:
-	    str = "placa" => Deve retornar "(placa)"
-	    str = "observe acima" => Deve retornar "(observe acima)"
-	    str = "" => Deve retornar "()"
 */	
 
 
