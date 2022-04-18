@@ -6,7 +6,6 @@
 	PS: Don't forget to increment the control variable at the end of the while,
 	or change the while condition value to false at some point, to avoid infinite loops!
 
-
 	Vamos trabalhar estruturas de loops do tipo while, por isso as soluções apresentarão apenas esse comando.
 	Escreva a função printNumbers(), que não recebe parâmetros e imprime os números de 1 a 10. Use 10 impressões no console. 
 	Lembre-se de usar uma estrutura de loop while.
