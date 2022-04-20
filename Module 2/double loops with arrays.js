@@ -217,3 +217,47 @@ function accumulatePairs(lst) {
     }
     return soma;
 }
+
+
+/*
+    Create a function called hasReverse(lst) that takes a list and checks if between the strings of the
+    list there is one that appears written normally and written in reverse.
+
+    Crie uma função chamada temReverso(lst) que recebe uma lista e verifica se entre as strings da 
+    lista existe alguma que aparece escrita normalmente e escrita da maneira reversa.
+
+    Ex:
+        lst = ['mar', 'mato', 'otam', 'lar'] => Deve retornar true
+        lst = ['casa', 'arara', 'papel'] => Deve retornar false
+        lst = ['correr', 'sorrir', 'pular', 'rir', 'ralup', 'sair'] => Deve retornar true
+        lst = ['rir', 'ir'] => Deve retornar false
+        lst = ['rir', 'ir', 'rir'] => Deve retornar true
+*/
+
+function reverse(str) {
+
+    let aux = ''
+    for (let i = str.length - 1; i >= 0; i--) {
+        aux += str[i]
+    }
+    return aux
+}
+
+function hasReverse(lst) {
+
+    for (let i in lst ) {
+
+        let str = reverse(lst[i])
+
+        for (let j in lst) {
+            
+            if (i == j) {
+                continue
+            }
+            if (str == lst[j]) {
+                return true;
+            }
+        }
+    }
+    return false
+}
