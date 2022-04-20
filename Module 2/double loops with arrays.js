@@ -234,6 +234,8 @@ function accumulatePairs(lst) {
         lst = ['rir', 'ir', 'rir'] => Deve retornar true
 */
 
+
+// solution
 function reverse(str) {
 
     let aux = ''
@@ -243,6 +245,7 @@ function reverse(str) {
     return aux
 }
 
+
 function hasReverse(lst) {
 
     for (let i in lst ) {
@@ -250,7 +253,7 @@ function hasReverse(lst) {
         let str = reverse(lst[i])
 
         for (let j in lst) {
-            
+
             if (i == j) {
                 continue
             }
