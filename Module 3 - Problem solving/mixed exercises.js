@@ -340,6 +340,8 @@ function checkRepeat(lst) {
     and in all subsequent positions insert half of the previous value
     (may be broken number, do not do any rounding).
 
+    // --
+
     Crie uma função chamada criaArray(num). Essa função deve criar uma array de tamanho 15. 
     Em seguida deve preencher a primeira posição desse array com o parâmetro de entrada, 
     e em todas as posições seguintes inserir metade do valor anterior 
@@ -375,6 +377,8 @@ function createArray(num) {
 
     All positions are calculated from 0. Letter 'A' has value 0, letter 'B' has value 1, ...
     Your function should return the sum value to the input array.
+
+    // --
 
     Crie uma função chamada arrayHash(arr).
 
@@ -453,6 +457,8 @@ function fib(n) {
     and must turn it into the correctly written sentence.
     You can assume that the input will always be an even-length string.
 
+    // --
+
     Crie a função consertaBug(str), que recebe uma frase que está escrita 'de dentro para fora' 
     e deve transformá-la na frase escrita de forma correta.
     Você pode considerar que a entrada vai ser sempre uma string de tamanho par.
@@ -481,6 +487,8 @@ function fixBug(str) {
     He wants to find out what the most common grade is among students on his latest exam. All grades are integers between 0 and 100 (inclusive)
     If there is more than one most frequent grade, you must return the highest grade (among the most frequent).
 
+    // --
+
     Um professor, após terminar a correção das provas da turma, quer a sua ajuda para analisar as notas dos alunos.
     Ele quer descobrir qual é a nota mais comum entre os alunos na sua última prova. Todas as notas são inteiros entre 0 e 100 (inclusive)
     Se existir mais de uma nota mais frequente, você deve retornar a maior nota (entre as mais frequentes).
@@ -505,3 +513,160 @@ function mostFrequent(lst) {
     return parseInt(result);
 }
 
+
+/*
+    Galopeira music is a great classic of the sertanejo and for decades has challenged the best lungs in a true breath test.
+    Based on accurate measurements, they came to the conclusion that each sung letter takes exactly 1/100 second and each letter "e" takes 5/100.
+    Knowing this, make a program that measures the time, in seconds, of the classic chorus.
+
+    Input: Input is text with at least nine letters and up to 1000 letters.
+    Output: Output is the total time in seconds, to two decimal places, spent on all letters.
+
+    // --
+
+    A música Galopeira é um grande clássico do sertanejo e há décadas desafia os melhores pulmões numa verdadeira prova de fôlego. 
+    Com base em medições precisas, chegaram à conclusão que cada letra cantada demora exatos 1/100 segundos e cada letra "e" demora 5/100. 
+    Sabendo disso faça um programa que mede o tempo, em segundos, do clássico refrão.
+
+    Entrada: A entrada é um texto com pelo menos nove letras e até 1000 letras.
+    Saída: Saída é o tempo total em segundos, com duas casas decimais, gasto em todas as letras.
+
+    Ex.:
+        Input: galopeeeeeeeeeeeeeeeeeira
+        Output: 0.93
+
+        Input: galopeira
+        Output: 0.13
+*/
+
+
+// solution
+function musicTime(str) {
+
+    let result = 0;
+
+    for (let i in str) {
+        str[i] === 'e' ? result += 5 / 100 : result += 1 / 100;
+    }
+
+    return Number(total.toFixed(2));
+}
+
+
+/*
+    John wants to assemble a panel containing a number made of LEDs.
+    He doesn't have many LEDs and he needs to know how many LEDs it will take for him to assemble the number he wants.
+    Help John by setting up an algorithm that from a non-negative integer input and considering the configuration of each number below,
+    calculate the minimum number of LEDs needed for João to assemble his panel.
+
+    // --
+
+    João quer montar um painel contendo um número feito de LEDs.
+    Ele não tem muitos LEDs e ele precisa saber quantos LEDs serão necessários para ele montar o número que deseja.
+    Ajude João montando um algoritmo que a partir de um número inteiro não-negativo de entrada e considerando a configuração de cada número abaixo, 
+    calcule o número minimo de LEDs necessários para que João consiga montar seu painel.
+
+    Ex:
+        num = 15 => Deve retornar 7
+        num = 115 => Deve retornar 9
+        num = 115380 => Deve retornar 27
+*/
+
+
+// solution
+function countLeds(num) {
+
+    let str = num + ''
+    let result = 0
+    let data = { 0: 6, 1: 2, 2: 5, 3: 5, 4: 4, 5: 5, 6: 6, 7: 3, 8: 7, 9: 6 }
+
+    for (let i in str) {
+
+        let keys = Object.keys(data)
+        if (keys.includes(str[i])) result += data[str[i]]
+    }
+
+    return result
+}
+
+
+/*
+    Your mother gave you a shopping list to pick up at the local grocery store, and she was very clear that you should bring all the items on the list,
+    or as many of them as possible in order of priority. To give you an incentive, she said you could keep the change.
+    Excited at the idea of ​​buying everything in bullets, you accept the quest.
+    Arriving at the grocery store, you discover that your mother had called moments before and passed the shopping list to the attendant,
+    who wrote down the prices of each product on a list, following the order dictated by her mother.
+
+    At that moment, you realize that maybe there won't be any change and you have the brilliant idea of ​​creating a program that checks this possibility for you,
+    so whenever your mother asks you to go to the market again you can check if you have any change left.
+
+    Your program should receive two lists, the first with purchase items, the second with prices following the order of the items on the shopping list,
+    and finally the value of the money received. Your program will display the list of items purchased with the given value.
+    Item prices and total money may be broken values ​​(eg 3.5), but will be positive. The shopping list will always have at least 1 item.
+
+    // ----
+
+    Sua mãe passou uma lista de compras para ir buscar no mercadinho do bairro, e ela foi bem clara que você deveria trazer todos os itens da lista, 
+    ou o máximo possível deles seguindo a ordem de prioridade. Para te dar um incentivo, ela disse que o troco poderia ficar para você. 
+    Empolgado com a ideia de comprar tudo em balas, você aceita a missão. 
+    Chegando no mercadinho, você descobre que sua mãe havia ligado momentos antes e passado a lista de compras para o atendente, 
+    que anotou os preços de cada produto em uma lista, seguindo a ordem ditada por sua mãe.
+
+    Nesse momento, você percebe que talvez não haverá troco e tem a brilhante ideia de criar um programa que verifica essa possibilidade para você, 
+    assim sempre que sua mãe pedir novamente para que você vá ao mercado você poderá verificar se irá sobrar um troco.
+
+    Seu programa deve receber duas listas, a primeira de ítens de compra, a segunda com os preços seguindo a ordem dos ítens da lista de compras,
+    e por fim o valor do dinheiro recebido. Seu programa irá mostrar a lista de ítens comprados com o valor dado. 
+    Os preços dos ítens e dinheiro total podem ser valores quebrados (ex: 3.5), mas serão positivos. A lista de compras sempre terá pelo menos 1 item.
+
+    Ex: list = ['detergente', 'sal', 'macarrao', 'pao']; precos = [3.00, 1.00, 4.0, 12.0] ;total = 9 => Deve retornar ['detergente, 'sal', 'macarrao']
+
+*/
+
+
+// solution
+function shoppingList(lista, precos, total) {
+
+    let result = [];
+    let sum = 0;
+
+    for (let i in lista) {
+
+        sum += precos[i];
+        if (sum > total) break;
+        result.push(lista[i]);
+    }
+
+    return result;
+}
+
+/*
+    Um professor de geologia reparou que em um determinado terreno, a cada 100 metros ele encontrava um cume e exatamente 
+    no meio entre dois cumes se encontrava um vale. Isso significa que a cada 50 metros terá um vale ou um cume e durante todo 
+    o terreno não existe nenhum cume seguido por outro cume, nem nenhum vale seguido por outro vale.
+
+    Esse professor ficou curioso com esse padrão e gostaria de saber se ele ocorre em outros terrenos. 
+    Sua tarefa é: dada uma array representando um outro terreno, indicar se esse terreno possuí ou não esse padrão.
+
+    A array é composta por diversos números inteiros que representam as alturas medidas a cada 50 metros. 
+    Uma medida é considerada cume se é maior que a medida anterior e é considerada vale se é mais baixa que a anterior.
+
+    Sua função deve retornar true, caso exista o padrão na array, e false, caso contrário
+
+    Ex:
+        arr = [1, 4, -2] => Deve retornar true
+        arr = [100, 99, 112, -8, -7] => Deve retornar true
+        arr = [1, 2, 2, 1] => Deve retornar false
+        arr = [ ] => Deve retornar false
+        arr = [2, 1] => Deve retornar true
+        arr = [1, 2] => Deve retornar true
+        arr = [ 4 ] => Deve retornar false
+*/
+
+
+// solution
+function hasPattern(arr) {
+
+    // undefined
+
+}
