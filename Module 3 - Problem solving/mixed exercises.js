@@ -474,3 +474,34 @@ function fixBug(str) {
 
     return a + b
 }
+
+
+/* 
+    A teacher, after finishing the correction of the class tests, wants your help to analyze the students' grades.
+    He wants to find out what the most common grade is among students on his latest exam. All grades are integers between 0 and 100 (inclusive)
+    If there is more than one most frequent grade, you must return the highest grade (among the most frequent).
+
+    Um professor, após terminar a correção das provas da turma, quer a sua ajuda para analisar as notas dos alunos.
+    Ele quer descobrir qual é a nota mais comum entre os alunos na sua última prova. Todas as notas são inteiros entre 0 e 100 (inclusive)
+    Se existir mais de uma nota mais frequente, você deve retornar a maior nota (entre as mais frequentes).
+
+    Ex:
+        lst = [20, 80, 80, 10, 20] => should return 80
+        lst = [20, 25, 85, 40, 25, 90, 25, 40, 55, 40] => should return 40
+        lst = [10, 10, 10, 40, 40, 5, 5, 5] => should return 10
+
+*/
+
+
+// solution
+function mostFrequent(lst) {
+
+    let counts = {};
+
+    lst.forEach(function (x) { counts[x] = (counts[x] || 0) + 1; });
+    let arr = Object.keys(counts).map(function (x) { return [x, counts[x]]; });
+    let result = arr.reduce(function (a, b) { return a[1] > b[1] ? a : b; })[0];
+
+    return parseInt(result);
+}
+
