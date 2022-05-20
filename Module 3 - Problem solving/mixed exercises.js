@@ -641,6 +641,20 @@ function shoppingList(lista, precos, total) {
 }
 
 /*
+    A geology professor noticed that in a certain terrain, every 100 meters he found a summit and exactly
+    in the middle between two peaks was a valley. This means that every 50 meters there will be a valley or a ridge and throughout
+    the terrain there is no ridge followed by another ridge, nor any valley followed by another valley.
+
+    This teacher was curious about this pattern and would like to know if it occurs in other terrains.
+    Its task is: given an array representing another terrain, indicate whether or not this terrain has this pattern.
+
+    The array is composed of several integers that represent the heights measured every 50 meters.
+    A measurement is considered a peak if it is higher than the previous measurement and is considered a valley if it is lower than the previous measurement.
+
+    Your function should return true if the pattern exists in the array, and false otherwise.
+
+    // --
+
     Um professor de geologia reparou que em um determinado terreno, a cada 100 metros ele encontrava um cume e exatamente 
     no meio entre dois cumes se encontrava um vale. Isso significa que a cada 50 metros terá um vale ou um cume e durante todo 
     o terreno não existe nenhum cume seguido por outro cume, nem nenhum vale seguido por outro vale.
@@ -665,8 +679,19 @@ function shoppingList(lista, precos, total) {
 
 
 // solution
-function hasPattern(arr) {
+function temPadrao(array) {
 
-    // undefined
+    if (array.length <= 1) return false;
 
+    let padrao = 1;
+    const tamanho = array.length
+
+    for (let i = 0; i < tamanho; i++) {
+
+        if ((array[i] > array[i + 1]) || (array[i] < array[i + 1])) { padrao++ }
+
+    }
+
+    console.log(`tamanho: ${tamanho} padrao: ${padrao} ${padrao == tamanho}`)
+    return padrao == tamanho ? true : false
 }
