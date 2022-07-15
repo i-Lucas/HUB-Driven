@@ -640,6 +640,7 @@ function shoppingList(lista, precos, total) {
     return result;
 }
 
+
 /*
     A geology professor noticed that in a certain terrain, every 100 meters he found a summit and exactly
     in the middle between two peaks was a valley. This means that every 50 meters there will be a valley or a ridge and throughout
@@ -679,19 +680,171 @@ function shoppingList(lista, precos, total) {
 
 
 // solution
-function temPadrao(array) {
+function hasPattern(arr) {
 
-    if (array.length <= 1) return false;
+    if (arr.length < 2) return false;
+    if (arr.length === 2 && arr[0] === arr[1]) return false;
 
-    let padrao = 1;
-    const tamanho = array.length
+    let type = arr[0] > arr[1]
 
-    for (let i = 0; i < tamanho; i++) {
+    for (let i = 1; i < arr.length - 1; i++) {
 
-        if ((array[i] > array[i + 1]) || (array[i] < array[i + 1])) { padrao++ }
-
+        const pattern = arr[i] > arr[i + 1];
+        if (arr[i] === arr[i + 1]) return false;
+        if (type === pattern) return false;
+        type = pattern;
     }
 
-    console.log(`tamanho: ${tamanho} padrao: ${padrao} ${padrao == tamanho}`)
-    return padrao == tamanho ? true : false
+    return true;
+}
+
+
+/*
+    In a game of chess there are several pieces with curious movements.
+    One of these pieces is the Queen, which can be moved any number of spaces in any direction:
+    in the same row, in the same column or in any of the diagonals, as shown in the figure below:
+
+    Chess grandmaster Kary Gasparov invented a new chess problem:
+    given the position of a queen on an empty board, how many moves are needed
+    so that the queen can hit another square on the board?
+
+    Kary got the solution for some positions but is having trouble with others,
+    and that's why he came to ask for your help to write an algorithm that solves this problem.
+
+    Input:
+    Your function will receive two lists containing [X1, Y1] and [X2, Y2].
+    Where X1, Y1 represent the square the queen is on and X2, Y2 represent the square the queen wants to reach.
+    On the board the columns are numbered from 1 to 8, from left to right;
+    lines are also numbered from 1 to 8 from top to bottom.
+    A house is represented by an X row and a Y column.
+
+    Output:
+    Your program should return a number indicating the number of moves
+    necessary for the Queen to reach the final square.
+
+    // --
+
+    Em um jogo de Xadrez existem diversas peças com movimentos curiosos. 
+    Uma dessas peças é a Dama, que pode ser movimentada por qualquer número de casas em qualquer direção: 
+    na mesma linha, na mesma coluna ou em qualquer uma das diagonais, como demonstrado na figura abaixo:
+
+    O grande mestre de xadrez Kary Gasparov inventou um novo problema de xadrez: 
+    dado a posição de uma dama em um tabuleiro vazio, quantos movimentos são necessários 
+    para que a dama consiga atingir outra casa no tabuleiro?
+
+    Kary conseguiu a solução para algumas posições, mas está tendo dificuldade com outras, 
+    e por isso veio pedir sua ajuda para escrever um algoritmo que resolva esse problema.
+
+    Input:
+    Sua função receberá duas listas contendo [X1, Y1] e [X2, Y2]. 
+    Onde X1, Y1 representam a casa em que a dama está e X2, Y2 representam a casa em que a dama quer chegar. 
+    No tabuleiro as colunas são numeradas de 1 a 8, da esquerda para a direita; 
+    as linhas também são numeradas de 1 a 8, de cima para baixo. 
+    Uma casa é representada por uma linha X e uma coluna Y.
+
+    Output:
+    Seu programa deve retornar um número indicando a quantidade de movimentos 
+    necessários para a Dama chegar na casa final.
+
+    Ex:
+    casaIni = [3, 3], casaFin = [3, 3] => Deve retornar 0
+    casaIni = [4, 5], casaFin = [4, 8] => Deve retornar 1
+    casaIni = [2, 1], casaFin = [4, 5] => Deve retornar 2
+
+*/
+
+
+// solution
+function numMov(lst1, lst2) {
+
+    if (lst1[0] == lst2[0] && lst1[1] == lst2[1]) return 0
+    else if (lst1[0] == lst2[0] || lst1[1] == lst2[1] || Math.abs(lst1[0] - lst2[0]) == Math.abs(lst1[1] - lst2[1])) return 1
+    else return 2
+}
+
+
+/*
+    Kleberson and Marta are facing a big dilemma, the two are partners in a wonderful
+    cafeteria and can't come to the conclusion which is the best snacks of all time,
+    in the morning shift. After days of discussion and several polls among her clients, Marta asked for her
+    help to solve this story once and for all.
+
+    Marta will provide the notes from the one day cashier machine, this note groups the amount of
+    each snack sold within one hour each shift.
+
+    input
+
+    The input will be a list of texts where the beginning of each turn is represented by the letters
+    M (morning), T (afternoon), N (night) that will always come in that order. After the shift letter there are N integer values,
+    the first value is the total number of snacks sold in that turn, then texts that represent the amount of
+    each salt sold per hour. The text of the total amount of snacks is represented by a numerical value,
+    followed by a space, the letter of each savory, being: C (coxinha), R (risolis) and P (pastel).
+
+    Output
+
+    The output should be a list with the total amount of each snack sold in the morning shift, in the order:
+    Coxinha, Risolis and Pastel. It may be that some snacks were not sold in the morning.
+
+    // --
+
+    Kleberson e Marta estão enfrentando um grande dilema, os dois são sócios numa maravilhosa 
+    lanchonete e não conseguem chegar à conclusão de qual é o melhor salgados de todos os tempos, 
+    no turno da manhã. Após dias de discussão e várias enquetes entre seus clientes, Marta pediu sua 
+    ajuda para resolver essa história de uma vez por todas.
+
+    Marta irá fornecer as notinhas da máquina do caixa de um dia, essa nota agrupa a quantidade de 
+    cada salgado vendido no espaço de uma hora em cada turno.
+
+    Entrada
+
+    A entrada será uma lista de textos onde o início de cada turno é representado pelas letras 
+    M (manhã), T (tarde), N (noite) que virão sempre nessa ordem. Após a letra do turno existem N valores inteiros,
+    o primeiro valor é o total de salgados vendidos naquele turno, depois textos que representam a quantidade de 
+    cada salgado vendido por hora. O texto da quantidade total de salgados é representado por um valor numérico, 
+    seguido por um espaço, da letra de cada salgado, sendo elas: C (coxinha), R (risolis) e P (pastel).
+
+    Saída
+
+    A saída deve ser uma lista com a quantidade total de cada salgado, vendido no turno da manhã, na ordem: 
+    Coxinha, Risolis e Pastel. Pode ser que algum/alguns salgados não tenham sido vendidos de manhã.
+
+    Ex 1:
+    Entrada: arr = ['M', '50', '10 C', '6 R', '14 P', '20 C', 'T', '20', '20 C', 'N', '20', '20 P']
+    Saída: [30, 6, 14]. Porque, de manhã, foram vendidos 10+20=30 coxinhas, 6 risolis e 14 pastéis
+
+    Ex 2:
+    Entrada: arr = ['M', '50', '10 C', '14 P', '20 C', 'T', '20', '20 C', 'N', '20', '20 P']
+    Saída: [30, 0, 14].
+
+    Ex 3:
+    Entrada: arr = ['M', 'T', '20', '20 C', 'N', '20', '20 P']
+    Saída: [0, 0, 0]
+
+*/
+
+
+function saltedCount(array) {
+
+    let count = [0, 0, 0];
+
+    for (let i = 1; i < array.length; i++) {
+        if (array[i].includes('T')) break;
+
+        if (array[i].includes('C')) {
+
+            const value = array[i].split(" ");
+            count[0] += parseInt(value[0]);
+
+        } else if (array[i].includes('R')) {
+
+            const value = array[i].split(" ");
+            count[1] += parseInt(value[0]);
+        }
+        else if (array[i].includes('P')) {
+
+            const value = array[i].split(" ");
+            count[2] += parseInt(value[0]);
+        }
+    }
+    return count;
 }
